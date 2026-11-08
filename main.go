@@ -18,12 +18,13 @@ type Player struct {
 }
 
 type Selection struct {
-	PlayerID  string    `json:"player_id"`
-	Character string    `json:"character"`
-	Palette   int       `json:"palette"`
-	CursorX   int       `json:"cursor_x"`
-	CursorY   int       `json:"cursor_y"`
-	UpdatedAt time.Time `json:"updated_at"`
+	PlayerID     string    `json:"player_id"`
+	Character    string    `json:"character"`
+	CharacterDir string    `json:"character_dir"`
+	Palette      int       `json:"palette"`
+	CursorX      int       `json:"cursor_x"`
+	CursorY      int       `json:"cursor_y"`
+	UpdatedAt    time.Time `json:"updated_at"`
 }
 
 type Room struct {
